@@ -6,21 +6,26 @@ import { RouterModule, Routes } from '@angular/router';
 import { DataTableModule, SharedModule } from 'primeng/primeng';
 
 import { AppComponent } from './app.component';
-import { PageOneComponent } from './page-one/page-one.component';
-import { PageTwoComponent } from './page-two/page-two.component';
+import { BasicComponent } from './basic/basic.component';
+import { IntermediateComponent } from './intermediate/intermediate.component';
+import { AdvanceComponent } from './advance/advance.component';
 
 const appRoutes: Routes = [
   {
-    path: 'page-one',
-    component: PageOneComponent
+    path: 'basic',
+    component: BasicComponent
   },
   {
-    path: 'page-two',
-    component: PageTwoComponent
+    path: 'intermediate',
+    component: IntermediateComponent
+  },
+  {
+    path: 'advance',
+    component: AdvanceComponent
   },
   {
     path: '',
-    redirectTo: '/page-one',
+    redirectTo: '/basic',
     pathMatch: 'full'
   }
 ];
@@ -28,8 +33,9 @@ const appRoutes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
-    PageOneComponent,
-    PageTwoComponent
+    BasicComponent,
+    IntermediateComponent,
+    AdvanceComponent
   ],
   imports: [
     RouterModule.forRoot(
