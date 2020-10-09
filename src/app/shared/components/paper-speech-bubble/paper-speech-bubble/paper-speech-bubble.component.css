@@ -1,0 +1,102 @@
+.paper-speech-bubble {
+    position: relative;
+    border-radius: 5px;
+}
+
+.paper-speech-bubble__tail {
+    position: absolute;
+    height: 18px;
+    width: 18px;
+    overflow: hidden;
+}
+
+.paper-speech-bubble__tail:after {
+    content: " ";
+    display: block;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    transform: rotate(45deg);
+}
+
+/* bg color */
+.paper-speech-bubble--blue-bg {
+    background-color: #4195d5;
+}
+
+.paper-speech-bubble--blue-bg .paper-speech-bubble__tail:after {
+    background-color: #4195d5;
+}
+
+.paper-speech-bubble--white-bg {
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 2px rgba(65, 149, 213, 0.25);
+}
+
+.paper-speech-bubble--white-bg .paper-speech-bubble__tail:after {
+    background-color: #ffffff;
+    box-shadow: 0 0 3px 2px rgba(65, 149, 213, 0.25);
+}
+/* end of bg color */
+
+/* tail position */
+.paper-speech-bubble--top-tail {
+    margin-top: 10px;
+}
+
+.paper-speech-bubble--top-tail .paper-speech-bubble__tail {
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+.paper-speech-bubble--top-tail .paper-speech-bubble__tail:after {
+    top: 75%;
+    left: 0;
+}
+
+.paper-speech-bubble--right-tail {
+    margin-right: 10px;
+}
+
+.paper-speech-bubble--right-tail .paper-speech-bubble__tail {
+    top: 50%;
+    right: 0;
+    transform: translate(100%, -50%);
+}
+
+.paper-speech-bubble--right-tail .paper-speech-bubble__tail:after {
+    top: 0;
+    right: 75%;
+}
+
+.paper-speech-bubble--bottom-tail {
+    margin-bottom: 10px;
+}
+
+.paper-speech-bubble--bottom-tail .paper-speech-bubble__tail {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 100%);
+}
+
+.paper-speech-bubble--bottom-tail .paper-speech-bubble__tail:after {
+    bottom: 75%;
+    left: 0;
+}
+
+.paper-speech-bubble--left-tail {
+    margin-left: 10px;
+}
+
+.paper-speech-bubble--left-tail .paper-speech-bubble__tail {
+    top: 50%;
+    left: 0;
+    transform: translate(-100%, -50%);
+}
+
+.paper-speech-bubble--left-tail .paper-speech-bubble__tail:after {
+    top: 0;
+    left: 75%;
+}
+/* end of tail position */

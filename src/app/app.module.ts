@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { BasicComponent } from './basic/basic.component';
 import { IntermediateComponent } from './intermediate/intermediate.component';
 import { AdvanceComponent } from './advance/advance.component';
+import { PaperSpeechBubbleComponent } from './shared/components/paper-speech-bubble/paper-speech-bubble/paper-speech-bubble.component';
 
 const appRoutes: Routes = [
   {
@@ -35,7 +36,8 @@ const appRoutes: Routes = [
     AppComponent,
     BasicComponent,
     IntermediateComponent,
-    AdvanceComponent
+    AdvanceComponent,
+    PaperSpeechBubbleComponent
   ],
   imports: [
     RouterModule.forRoot(

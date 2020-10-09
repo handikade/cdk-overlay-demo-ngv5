@@ -14,7 +14,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 nav a {
